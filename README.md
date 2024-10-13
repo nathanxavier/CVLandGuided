@@ -10,11 +10,11 @@ We trained the solution using the [Brooklyn and Queens Dataset](https://arxiv.or
 
 # **Requirement**
 ```
-- Python >=, numpy, matplotlib, pillow, ptflops, timm
-- PyTorch >= , torchvision >= 
+- Python >=3.5, numpy, matplotlib, timm, pytorch_msssim, tqdm
+- PyTorch >= 12.1, torchvision torchaudio pytorch-cuda
 ```
 
 # **Training and Evaluation**
 We elaborated two different models using:
  1. A partial trained model based on the [FeatUp Backbone](https://github.com/mhamilton723/FeatUp)
- 2. A full-trained model using a Multi-Scale Transformer.
+ 2. A full-trained model using a Multi-Scale Transformer (MST).
