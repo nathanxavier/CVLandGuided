@@ -14,7 +14,16 @@ We trained the solution using the [Brooklyn and Queens Dataset](https://arxiv.or
 - PyTorch >= 12.1, torchvision torchaudio pytorch-cuda
 ```
 
-# **Training and Evaluation**
+# **Training**
 We elaborated two different models using:
- 1. A partial trained model based on the [FeatUp Backbone](https://github.com/mhamilton723/FeatUp)
+ 1. A partially trained model based on the [FeatUp Backbone](https://github.com/mhamilton723/FeatUp)
  2. A full-trained model using a Multi-Scale Transformer (MST).
+
+# **Evaluation**
+We compute the performances verifying the semantic segmentation map estimated by the proposed method:
+![Segmentation](https://github.com/nathanxavier/CVSegGuide/blob/main/Figures/B%26Q%20Segments.png)
+
+And verify the Discrete Probability Distribution (DPD) of the top-ranked regions in the image:
+![Segmentation](https://github.com/nathanxavier/CVSegGuide/blob/main/Figures/B%26Q%20Regions.png)
+
+The methodology proposed can be applied to any cross-view geo-localization dataset that uses overview and street-view images.
