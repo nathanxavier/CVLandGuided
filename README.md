@@ -15,4 +15,6 @@ We trained the solution using the [Brooklyn and Queens Dataset](https://arxiv.or
 ```
 
 # **Training and Evaluation**
-We make available the .
+We elaborated two different models using:
+ 1. A partial trained model based on the [FeatUp Backbone](https://github.com/mhamilton723/FeatUp)
+ 2. A full-trained model using a Multi-Scale Transformer.
