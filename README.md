@@ -1,8 +1,9 @@
 # **CVSegGuide**
 Cross-view geo-localization guided by the land cover semantic segmentation map.
 
+<p align="center">
 ![Graphical_Abstract](https://github.com/nathanxavier/CVSegGuide/blob/e0a8e126908861d44dccdcadd3218cf56547b377/Figures/Graphical%20Abstract.png)
-
+</p>
 
 # **Dataset**
 We trained the solution using the [Brooklyn and Queens Dataset](https://arxiv.org/pdf/2204.01807) and tested also using the cross test set from [VIGOR](https://github.com/Jeff-Zilence/VIGOR) dataset.
@@ -21,9 +22,13 @@ We elaborated two different models using:
 
 # **Evaluation**
 We compute the performances verifying the semantic segmentation map estimated by the proposed method:
+<p align="center">
 ![Segmentation](https://github.com/nathanxavier/CVSegGuide/blob/main/Figures/B%26Q%20Segments.png)
+</p>
 
 And verify the Discrete Probability Distribution (DPD) of the top-ranked regions in the image:
+<p align="center">
 ![Segmentation](https://github.com/nathanxavier/CVSegGuide/blob/main/Figures/B%26Q%20Regions.png)
+</p>
 
 The methodology proposed can be applied to any cross-view geo-localization dataset that uses overview and street-view images.
