@@ -26,7 +26,7 @@ We compute the performances verifying the semantic segmentation map estimated by
 <img src="https://github.com/nathanxavier/CVSegGuide/blob/main/Figures/B%26Q%20Segments.png">
 </p>
 
-And verify the Discrete Probability Distribution (DPD) of the top-ranked regions in the image:
+and Discrete Probability Distribution (DPD) of the top-ranked regions in the image:
 <p align="center">
 <img src="https://github.com/nathanxavier/CVSegGuide/blob/main/Figures/B%26Q%20Regions.png">
 </p>
