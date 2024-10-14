@@ -11,7 +11,7 @@ We trained the solution using the [Brooklyn and Queens Dataset](https://arxiv.or
 
 # **Requirement**
 ```
-- Python >=3.8, numpy, matplotlib, timm, pytorch_msssim, tqdm
+- Python >=3.8, numpy, pandas, matplotlib, sklearn, timm, pytorch_msssim, tqdm
 - PyTorch >= 12.1, torchvision torchaudio pytorch-cuda
 ```
 
