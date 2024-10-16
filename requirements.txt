@@ -8,4 +8,4 @@ seaborn
 sparse
 pytorch
 torchvision
-pytorch-cuda=12.1
+pytorch-cuda==12.1
