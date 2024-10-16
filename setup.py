@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension, CppExtension
 
 setup(
-    name='featup',
+    name='CVSegGuide',
     version='0.1.2',
     packages=find_packages(),
     install_requires=[
