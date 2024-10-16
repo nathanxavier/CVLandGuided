@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+tqdm
+imageio
+seaborn
+sparse
+pytorch
+torchvision
+pytorch-cuda=12.1
