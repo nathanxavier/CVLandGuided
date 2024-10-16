@@ -20,29 +20,20 @@ import matplotlib.pyplot as plt
 
 def transformsCompose(size_sat, size_sat_default, size_gnd, size_gnd_default):
   transform_aerial_train = [
-      # transforms.RandomResizedCrop(size=(224, 224), scale=(0.75,1.0), ratio=(0.75,1.3333), interpolation=3), #Image.BICUBIC)
       transforms.Resize(size_sat_default, interpolation=3),
       transforms.Pad(0, padding_mode='edge'),
-      # transforms.RandomCrop(size_sat),
-      # transforms.RandomHorizontalFlip(),
       transforms.ToTensor(),
-      # transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
   ]
 
   transform_label_train = [
-      # transforms.RandomResizedCrop(size=(224, 224), scale=(0.75,1.0), ratio=(0.75,1.3333), interpolation=3), #Image.BICUBIC)
       transforms.Resize(size_sat_default, interpolation=1),
       transforms.Pad(0, padding_mode='edge'),
-      # transforms.RandomCrop(size_sat),
-      # transforms.RandomHorizontalFlip(),
       transforms.ToTensor(),
-      # transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
   ]
 
   transform_aerial_val = [
       transforms.Resize(size_sat_default, interpolation=3),
       transforms.ToTensor(),
-      # transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
   ]
 
   transform_street_train = [
@@ -50,11 +41,7 @@ def transformsCompose(size_sat, size_sat_default, size_gnd, size_gnd_default):
       transforms.Pad(0, padding_mode='edge'),
       transforms.CenterCrop((832, 3328)),		# Removes 50% of to minimize distortions -> 2022 Workman
       transforms.Resize(size_gnd),				# Resize Fator = 6.5
-      # transforms.RandomAffine(90),
-      # transforms.RandomCrop((224, 224)),
-      # transforms.RandomHorizontalFlip(),
       transforms.ToTensor(),
-      # transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
   ]
 
   transform_street_val = [
