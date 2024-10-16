@@ -27,18 +27,6 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.8',
-    ext_modules=[
-        CUDAExtension(
-            'adaptive_conv_cuda_impl',
-            [
-                'featup/adaptive_conv_cuda/adaptive_conv_cuda.cpp',
-                'featup/adaptive_conv_cuda/adaptive_conv_kernel.cu',
-            ]),
-        CppExtension(
-            'adaptive_conv_cpp_impl',
-            ['featup/adaptive_conv_cuda/adaptive_conv.cpp'],
-            undef_macros=["NDEBUG"]),
-    ],
     cmdclass={
         'build_ext': BuildExtension
     }
