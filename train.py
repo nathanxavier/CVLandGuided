@@ -3,69 +3,27 @@
 import math
 import sys
 import os
-# import urllib.request
-# from functools import partial
-# from urllib.error import HTTPError
-# import random
-# import sparse
 import argparse
-# from enum import Enum
 import time
 from datetime import datetime
 import warnings
 import pickle
-# import builtins
 import shutil
-import pandas as pd
 import csv
 
-# Images
-# from PIL import Image
-# import imageio.v2 as imageio
-
 # Plotting
-# import matplotlib
-# import matplotlib.pyplot as plt
-# import matplotlib_inline.backend_inline
 import numpy as np
-# import seaborn as sns
 import torch.distributed
-
-# PyTorch Lightning
-# import lightning as L
 
 # PyTorch
 import torch
 import torch.nn as nn
-# import torch.nn.functional as F
-# import torch.optim as optim
-# from torch.utils.data import DataLoader, RandomSampler, SubsetRandomSampler
-# from torch.autograd import Variable
-# from torch.cuda.amp import autocast,GradScaler
-import pytorch_msssim
 
-# Torchvision
-# import torchvision
-# from lightning.pytorch.callbacks import ModelCheckpoint
-# from torchvision import datasets, transforms
-# from torchvision.datasets import CIFAR100
-# from tqdm.notebook import tqdm
-# from torchvision.models import efficientnet_b4, resnet50
-# from torchvision.models.feature_extraction import create_feature_extractor
-
-# timm
-# from timm import layers, models
-
-# from models.ViT_Basis import *
 from datasets.Brooklyn_n_Queens import *
 from models.transformer_model import Create_Model
-from models.unet import UNet
 from optimizers.make_optimizer import *
 from criterion.soft_triplet import *
 from criterion.dice_loss import Dice_Loss
-# from losses.cal_loss import cal_kl_loss,cal_loss,cal_triplet_loss
-
-# from scipy.stats import wasserstein_distance
 
 #In[]: Parser-
 parser = argparse.ArgumentParser(description='CVSegGuide')
@@ -203,25 +161,17 @@ def main():
   # Create model
   print("\n-> Creating model")
   model = Create_Model(args=args).cuda(args.gpu)
-  # model = UNet(n_channels=3, n_classes=args.classes, bilinear=True).cuda(args.gpu)
-
-  # DataParallel will divide and allocate batch_size to all available GPUs
-  # model = torch.nn.DataParallel(model).cuda(args.gpu)
 
   parameters = list(filter(lambda p: p.requires_grad, model.parameters()))
 
   # Criterion
-  # compute_complexity(model, args)  # uncomment to see detailed computation cost
-  criterion_triplet = SoftTripletBiLoss().cuda(args.gpu)
   criterion_BCE = nn.BCEWithLogitsLoss().cuda(args.gpu) #Num Class = 1
   criterion_CE = nn.CrossEntropyLoss().cuda(args.gpu)
-  criterion_SSIM = pytorch_msssim.SSIM(data_range=1.0, channel=1)
   criterion_Dice = Dice_Loss().cuda(args.gpu)
   criterion_MSE = nn.MSELoss().cuda(args.gpu)
 
   # Optimizer
   optimizer = torch.optim.Adam(parameters, args.lr, betas=(0.9, 0.999), eps=1e-08, weight_decay=args.weight_decay)
-  # optimizer = torch.optim.RMSprop(parameters, lr=args.lr, weight_decay=args.weight_decay, momentum=args.momentum, foreach=True)
 
   # Load checkpoint
   if(f"{base}_{args.base}{args.ckpt}" in os.listdir(args.load_ckpt)):
