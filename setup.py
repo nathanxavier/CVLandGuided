@@ -3,7 +3,10 @@ from torch.utils.cpp_extension import BuildExtension, CUDAExtension, CppExtensio
 
 setup(
     name='CVSegGuide',
-    version='0.1.2',
+    version='0.1.0',
+    author='Nathan Xavier',
+    author_email='nathanxavier@ufmg.br',
+    description='Paper in review',
     packages=find_packages(),
     install_requires=[
         'torch',
@@ -15,19 +18,6 @@ setup(
         'matplotlib',
         'timm',
     ],
-    author='Nathan Xavier',
-    author_email='nathanxavier@ufmg.br',
-    description='CVSegGuide',
-    long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
     url='https://github.com/nathanxavier/CVSegGuide',
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
     python_requires='>=3.8',
-    cmdclass={
-        'build_ext': BuildExtension
-    }
 )
