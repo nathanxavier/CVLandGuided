@@ -8,15 +8,15 @@ import torchvision
 from torchvision import transforms
 
 from timm.models.vision_transformer import VisionTransformer, _cfg, PatchEmbed
-from timm.models.registry import register_model
+from timm.models import register_model
 from timm.models.layers import trunc_normal_
 
 from .backbones.vit_pytorch import Multi_scale_transformer
 # from .backbones.crossformer import CrossFormer
 # from .backbones.crossformer_backbone_seg import CrossFormer
-from .backbones.Deit import DistilledVisionTransformer
-from .backbones.hubconf import UpsampledBackbone
-from .backbones.sep_vit import SepViT
+# from .backbones.Deit import DistilledVisionTransformer
+# from .backbones.hubconf import UpsampledBackbone
+# from .backbones.sep_vit import SepViT
 
 
 class Create_Model(nn.Module):
