@@ -13,7 +13,7 @@ from timm.models.layers import trunc_normal_
 
 from .backbones.vit_pytorch import Multi_scale_transformer
 # from .backbones.crossformer import CrossFormer
-from .backbones.crossformer_backbone_seg import CrossFormer
+# from .backbones.crossformer_backbone_seg import CrossFormer
 from .backbones.Deit import DistilledVisionTransformer
 from .backbones.hubconf import UpsampledBackbone
 from .backbones.sep_vit import SepViT
