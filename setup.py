@@ -32,4 +32,7 @@ setup(
         ['models/backbones/featup/adaptive_conv_cuda/adaptive_conv.cpp'],
         undef_macros=["NDEBUG"]),
     ],
+    cmdclass={
+        'build_ext': BuildExtension
+    }
 )
