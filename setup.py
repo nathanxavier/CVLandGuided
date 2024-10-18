@@ -24,12 +24,12 @@ setup(
         CUDAExtension(
             'adaptive_conv_cuda_impl',
             [
-                'featup/adaptive_conv_cuda/adaptive_conv_cuda.cpp',
-                'featup/adaptive_conv_cuda/adaptive_conv_kernel.cu',
+                'models/backbones/featup/adaptive_conv_cuda/adaptive_conv_cuda.cpp',
+                'models/backbones/featup/adaptive_conv_cuda/adaptive_conv_kernel.cu',
             ]),
         CppExtension(
             'adaptive_conv_cpp_impl',
-            ['featup/adaptive_conv_cuda/adaptive_conv.cpp'],
+            ['models/backbones/featup/adaptive_conv_cuda/adaptive_conv.cpp'],
             undef_macros=["NDEBUG"]),
     ],
     cmdclass={
