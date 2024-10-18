@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 from torchvision import transforms
 
-from timm.models.registry import register_model
+from timm.models import register_model
 
 from .backbones.vit_pytorch import Multi_scale_transformer
 
