@@ -16,7 +16,7 @@ setup(
         'scikit-learn',
         'numpy',
         'matplotlib',
-        'timm',
+        'timm=1.0.9',
     ],
     url='https://github.com/nathanxavier/CVSegGuide',
     python_requires='>=3.8',
