@@ -1,4 +1,5 @@
 # **CVSegGuide**
+[![Open CVSegGuide in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yEqk_eFxmwLafMOeTbtH2t8o2Evbziae?usp=sharing)
 Cross-view geo-localization guided by the land cover semantic segmentation map.
 
 <p align="center">
