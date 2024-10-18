@@ -1,22 +1,10 @@
 # **CVSegGuide**
 [![Open CVSegGuide in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yEqk_eFxmwLafMOeTbtH2t8o2Evbziae?usp=sharing)
 
-
-    \author[label1,label2,label5]{Nathan A. Z. Xavier}
-    \ead{nathanxavier@ufmg.br}
-    \author[label2,label3,label4]{Elcio H. Shiguemori}
-    \ead{elcio@ieav.cta.br}
-    \author[label2]{Marcos R. O. A. Maximo}
-    \ead{mmaximo@ita.br}
-    \author[label5]{Mubarak Shah}
-    \ead{shah@crcv.ucf.edu}
-
-    
 [Nathan A. Z. Xavier](http://lattes.cnpq.br/2088578568009855),
-
 [Elcio H. Shiguemori](http://lattes.cnpq.br/7243145638158319),
 [Marcos R. O. A. Maximo](http://lattes.cnpq.br/1610878342077626),
-[Mubarak Shah]()
+[Mubarak Shah](https://www.crcv.ucf.edu/person/mubarak-shah/)
 
 Cross-view geo-localization guided by the land cover semantic segmentation map.
 
