@@ -20,16 +20,16 @@ setup(
     ],
     url='https://github.com/nathanxavier/CVSegGuide',
     python_requires='>=3.8',
-        ext_modules=[
+    ext_modules=[
     CUDAExtension(
         'adaptive_conv_cuda_impl',
         [
-            'CVSegGuide/models/backbone/featup/adaptive_conv_cuda/adaptive_conv_cuda.cpp',
-            'CVSegGuide/models/backbone/featup/adaptive_conv_cuda/adaptive_conv_kernel.cu',
+            'CVSegGuide/models/backbones/featup/adaptive_conv_cuda/adaptive_conv_cuda.cpp',
+            'CVSegGuide/models/backbones/featup/adaptive_conv_cuda/adaptive_conv_kernel.cu',
         ]),
     CppExtension(
         'adaptive_conv_cpp_impl',
-        ['CVSegGuide/models/backbone/featup/adaptive_conv_cuda/adaptive_conv.cpp'],
+        ['CVSegGuide/models/backbones/featup/adaptive_conv_cuda/adaptive_conv.cpp'],
         undef_macros=["NDEBUG"]),
     ],
 )
