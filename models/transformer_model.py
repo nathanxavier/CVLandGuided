@@ -39,9 +39,9 @@ class Create_Model(nn.Module):
     elif "mst" in self.base:
       print("Loading Multi Scale Transformer")
       base_transformer = mst
-    self.aerial = base_transformer(img_size=(256,256))
+    self.aerial = base_transformer(img_size=args.size_sat)
     self.aerial_name = "aerial"
-    self.street = base_transformer(img_size=(128,512))
+    self.street = base_transformer(img_size=args.size_gnd)
     self.street_name = "street"
 
     self.transformer = build_transformer(args)
