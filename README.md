@@ -39,3 +39,21 @@ and Discrete Probability Distribution (DPD) of the top-ranked regions in the ima
 </p>
 
 The methodology proposed can be applied to any cross-view geo-localization dataset that uses overview and street-view images.
+
+# **Citation**
+If you find this work useful in your research, please consider citing:
+
+[Nathan A. Z. Xavier, Elcio H. Shiguemori, Marcos R. O. A. Maximo, Mubarak Shah, *A guided approach for cross-view geolocalization estimation with land cover semantic segmentation*, Biomimetic Intelligence and Robotics, 2025](https://doi.org/10.1016/j.birob.2024.100208).
+
+```bibtex
+@article{XAVIER2025100208,
+  title = {A guided approach for cross-view geolocalization estimation with land cover semantic segmentation},
+  journal = {Biomimetic Intelligence and Robotics},
+  pages = {100208},
+  year = {2025},
+  issn = {2667-3797},
+  doi = {https://doi.org/10.1016/j.birob.2024.100208},
+  url = {https://www.sciencedirect.com/science/article/pii/S2667379724000664},
+  author = {Nathan A.Z. Xavier and Elcio H. Shiguemori and Marcos R.O.A. Maximo and Mubarak Shah},
+  keywords = {Cross-view geolocalization, Semantic segmentation, Satellite and ground image fusion, Simultaneous localization and mapping (SLAM)},
+}
