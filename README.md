@@ -46,7 +46,7 @@ If you find this work useful in your research, please consider citing:
 [Nathan A. Z. Xavier, Elcio H. Shiguemori, Marcos R. O. A. Maximo, Mubarak Shah, *A guided approach for cross-view geolocalization estimation with land cover semantic segmentation*, Biomimetic Intelligence and Robotics, 2025](https://doi.org/10.1016/j.birob.2024.100208).
 
 ```bibtex
-@article{XAVIER2025100208,
+@article{Xavier2025,
   title = {A guided approach for cross-view geolocalization estimation with land cover semantic segmentation},
   journal = {Biomimetic Intelligence and Robotics},
   pages = {100208},
